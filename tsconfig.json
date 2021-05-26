@@ -1,15 +1,42 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2017",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true
-  }
+	"compilerOptions": {
+		"module": "commonjs",
+		"declaration": true,
+		"removeComments": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"target": "es2017",
+		"sourceMap": true,
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"incremental": true,
+		"noLib": false,
+		"noImplicitAny": false,
+		"typeRoots": [
+			"node_modules/@types",
+			"types"
+		],
+		"paths": {
+			"@config": ["src/config"],
+			"@environments": ["src/environments"],
+			"@generator": ["src/generator/graphql.schema"],
+			"@entities": ["src/entities"],
+			"@utils": ["src/utils"],
+			"@constants": ["src/constant"]
+		}
+	},
+	"include": [
+		"src/**/*.ts",
+		"test"
+	],
+	"compileOnSave": false,
+	"exclude": [
+		"node_modules",
+		"coverage",
+		"document",
+		"dist",
+		"backup",
+		"**/*.spec.ts"
+	]
 }

@@ -1,0 +1,18 @@
+{
+	"moduleDirectories": ["node_modules", "src"],
+	"moduleFileExtensions": ["js", "json", "ts"],
+	"testEnvironment": "node",
+	"testRegex": ".spec.ts$",
+	"transform": {
+		"^.+\\.ts$": "ts-jest"
+	},
+	"coverageDirectory": "./coverage",
+	"collectCoverage": true,
+	"moduleNameMapper": {
+		"^@config(.*)$": "<rootDir>/src/config$1",
+		"^@environments(.*)$": "<rootDir>/src/environments$1",
+		"^@entities(.*)$": "<rootDir>/src/entities$1",
+		"^@constants(.*)$": "<rootDir>/src/constant$1",
+		"^@generator(.*)$": "<rootDir>/src/generator/graphql.schema$1"
+	}
+}
