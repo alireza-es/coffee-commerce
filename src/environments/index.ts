@@ -11,7 +11,7 @@ const DOMAIN: string = process.env.DOMAIN || 'localhost';
 const ATLAS_DB_USER = process.env.ATLAS_USER || 'admin'
 const ATLAS_DB_PASS = process.env.ATLAS_PASS || 'bYBQuQybB3qHsy3L'
 const ATLAS_DB_HOST = process.env.ATLAS_HOST || 'cluster0.1ot9b.azure.mongodb.net'
-const ATLAS_DB_DATABASE = process.env.ATLAS_DATABASE || 'booking'
+const ATLAS_DB_DATABASE = process.env.ATLAS_DATABASE || 'coffee-commerce'
 const ATLAS_DB_URL = process.env.ATLAS_DB_URL || `mongodb+srv://${ATLAS_DB_USER}:${ATLAS_DB_PASS}@${ATLAS_DB_HOST}/${ATLAS_DB_DATABASE}?retryWrites=true&w=majority`;
 
 // typeorm

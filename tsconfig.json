@@ -18,12 +18,15 @@
 			"types"
 		],
 		"paths": {
-			"@config": ["src/config"],
-			"@environments": ["src/environments"],
-			"@generator": ["src/generator/graphql.schema"],
-			"@entities": ["src/entities"],
-			"@utils": ["src/utils"],
-			"@constants": ["src/constant"]
+			"@config": [
+				"src/config"
+			],
+			"@environments": [
+				"src/environments"
+			],
+			"@utils": [
+				"src/utils"
+			]
 		}
 	},
 	"include": [
