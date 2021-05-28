@@ -26,9 +26,11 @@ export class ProductEntity {
   price: number;
 
   @Expose()
+  @Column()
   productOptionGroup: ProductOptionGroup[];
 
   @Expose()
+  @Column()
   variations: Variation[];
 
   constructor(product: Partial<ProductEntity>) {
