@@ -1,7 +1,6 @@
 import { TYPE_ORM } from '@environments'
 import { Injectable } from '@nestjs/common'
 import { TypeOrmModuleOptions, TypeOrmOptionsFactory } from '@nestjs/typeorm'
-import { getMetadataArgsStorage } from 'typeorm'
 
 @Injectable()
 export class TypeOrmService implements TypeOrmOptionsFactory {
@@ -9,7 +8,8 @@ export class TypeOrmService implements TypeOrmOptionsFactory {
 		const options = {
 			...TYPE_ORM,
 			type: 'mongodb',
-			entities: getMetadataArgsStorage().tables.map(tbl => tbl.target),
+			// entities: getMetadataArgsStorage().tables.map(tbl => tbl.target),
+			entities: [__dirname + '/**/*.entity.{ts,js}'],
 			synchronize: true,
 			autoLoadEntities: true,
 			useNewUrlParser: true,
