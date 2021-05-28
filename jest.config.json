@@ -9,8 +9,10 @@
 	"coverageDirectory": "./coverage",
 	"collectCoverage": true,
 	"moduleNameMapper": {
+		"^@root(.*)$": "<rootDir>/src$1",
 		"^@utils(.*)$": "<rootDir>/src/utils$1",
 		"^@config(.*)$": "<rootDir>/src/config$1",
+		"^@modules(.*)$": "<rootDir>/src/modules$1",
 		"^@environments(.*)$": "<rootDir>/src/environments$1"
 	}
 }
